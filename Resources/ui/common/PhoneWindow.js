@@ -1,7 +1,7 @@
 function PhoneWindow(title) {
 	var self = Ti.UI.createWindow({
 		title:title,
-		backgroundColor:'white'
+		backgroundColor:'black'
 	});
 	
 	var isMobileWeb = Titanium.Platform.osname == 'mobileweb';

@@ -1,7 +1,7 @@
 function BaseUIWindow(title) {
 	var self = Ti.UI.createWindow({
 		title:title,
-		backgroundColor:'white'
+		backgroundColor:'black'
 	});
 	
 	var isMobileWeb = Titanium.Platform.osname == 'mobileweb';
@@ -109,13 +109,14 @@ function BaseUIWindow(title) {
 		borderRadius:10
 	});
 	
-	var view = Titanium.UI.createView({
-		backgroundColor:'#000',
-		opacity:0.7,
-		height:30,
-		width:250,
-		borderRadius:10
-	});
+        // BB TODO: Not implemented yet createView
+	//var view = Titanium.UI.createView({
+		//backgroundColor:'#000',
+		//opacity:0.7,
+		//height:30,
+		//width:250,
+		//borderRadius:10
+	//});
 	
 	var label = Titanium.UI.createLabel({
 		color:'#fff',
@@ -124,29 +125,31 @@ function BaseUIWindow(title) {
 		width:'auto',
 		height:'auto'
 	});
-	win.add(view);
+        // BB TODO: Not implemented yet
+	// win.add(view);
 	win.add(label);
 	
-	Titanium.App.addEventListener('event_one', function(e)
-	{
-		label.text = 'base_ui.js: event one, array length = ' + e.data.length;
-		win.open();
-		setTimeout(function()
-		{
-			win.close({opacity:0,duration:500});
-		},1000);
-	});
+        // BB TODO: Not implemented yet Ti.App
+	//Titanium.App.addEventListener('event_one', function(e)
+	//{
+		//label.text = 'base_ui.js: event one, array length = ' + e.data.length;
+		//win.open();
+		//setTimeout(function()
+		//{
+			//win.close({opacity:0,duration:500});
+		//},1000);
+	//});
 	
-	Titanium.App.addEventListener('event_two', function(e)
-	{
-		label.text = 'base_ui.js: event two, name = ' + e.name;
-		win.open();
-		setTimeout(function()
-		{
-			win.close({opacity:0,duration:500});
-		},1000);
+	//Titanium.App.addEventListener('event_two', function(e)
+	//{
+		//label.text = 'base_ui.js: event two, name = ' + e.name;
+		//win.open();
+		//setTimeout(function()
+		//{
+			//win.close({opacity:0,duration:500});
+		//},1000);
 	
-	});
+	//});
 
 	
 	return self;

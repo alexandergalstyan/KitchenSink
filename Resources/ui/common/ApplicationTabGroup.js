@@ -73,15 +73,16 @@ function ApplicationTabGroup() {
 			Titanium.UI.LANDSCAPE_RIGHT
 		]
 	});
-	var messageView = Titanium.UI.createView({
-		id:'messageview',
-		height:30,
-		width:250,
-		borderRadius:10,
-		backgroundColor:'#000',
-		opacity:0.7,
-		touchEnabled:false
-	});
+        // BB TODO: createView not implemented yet
+	//var messageView = Titanium.UI.createView({
+		//id:'messageview',
+		//height:30,
+		//width:250,
+		//borderRadius:10,
+		//backgroundColor:'#000',
+		//opacity:0.7,
+		//touchEnabled:false
+	//});
 		
 	var messageLabel = Titanium.UI.createLabel({
 		id:'messagelabel',
@@ -95,7 +96,8 @@ function ApplicationTabGroup() {
 		},
 		textAlign:'center'
 	});
-	messageWin.add(messageView);
+        // BB TODO: createView not implemented yet
+	// messageWin.add(messageView);
 	messageWin.add(messageLabel);
 	
 	self.addEventListener('close', function() {

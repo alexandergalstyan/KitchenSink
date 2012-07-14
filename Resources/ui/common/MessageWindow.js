@@ -12,15 +12,16 @@ function MessageWindow() {
 			Titanium.UI.LANDSCAPE_RIGHT
 		]
 	});
-	var messageView = Titanium.UI.createView({
-		id:'messageview',
-		height:30,
-		width:250,
-		borderRadius:10,
-		backgroundColor:'#000',
-		opacity:0.7,
-		touchEnabled:false
-	});
+    // BB TODO: createView not implemented yet
+	//var messageView = Titanium.UI.createView({
+		//id:'messageview',
+		//height:30,
+		//width:250,
+		//borderRadius:10,
+		//backgroundColor:'#000',
+		//opacity:0.7,
+		//touchEnabled:false
+	//});
 	var messageLabel = Titanium.UI.createLabel({
 		id:'messagelabel',
 		text:'',
@@ -33,8 +34,8 @@ function MessageWindow() {
 		},
 		textAlign:'center'
 	});
-		
-	win.add(messageView);
+	// BB TODO: createView not implemented yet
+	//win.add(messageView);
 	win.add(messageLabel);
 	
 	this.setLabel = function(_text) {
